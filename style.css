@@ -1,11 +1,52 @@
-#first-name {
-    display: inline-block;
+:root {
+    --small-padding: 4px;
+    --small-margin: 4px;
 }
 
-#last-name {
-    display: inline-block;
+#question-comment-form {
+
+    border: 1px solid #bbb;
+    padding: 10px;
+
+    min-width: 200px;
+    max-width: 500px;
+    width: 500px;
 }
 
-#street-address {
+.vbox {
+    display: flex;
+    flex-direction: column;
+}
 
+.vitem {
+    display: flex;
+    flex: 1;
+    height: 0;
+}
+
+.hbox {
+    display: flex;
+}
+
+.hitem {
+    display: flex;
+    flex: 1;
+    width: 0;
+}
+
+#submit-button {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.8em 2em;
+}
+
+input {
+    border: none;
+    background-color: #eee;
+    padding: 1em;
 }
