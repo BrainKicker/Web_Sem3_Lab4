@@ -3,50 +3,63 @@
     --small-margin: 4px;
 }
 
-#question-comment-form {
 
-    border: 1px solid #bbb;
-    padding: 10px;
+#question-comment-form {
 
     min-width: 200px;
     max-width: 500px;
     width: 500px;
+
+    border: 1px solid #bbb;
+
+    padding: 10px;
 }
+
 
 .vbox {
     display: flex;
     flex-direction: column;
 }
 
-.vitem {
+.vbox>* {
     display: flex;
     flex: 1;
     height: 0;
 }
 
+
 .hbox {
     display: flex;
 }
 
-.hitem {
+.hbox>* {
     display: flex;
     flex: 1;
     width: 0;
 }
 
+
 #submit-button {
+
     margin-top: 10px;
-    background-color: black;
-    color: white;
+
     border: none;
     border-radius: 7px;
+
+    color: white;
+    background-color: black;
+
+    padding: 0.8em 2em;
+
     font-size: 16px;
     font-weight: bold;
-    padding: 0.8em 2em;
 }
 
-input, textarea {
+
+input,
+textarea {
     border: none;
+    border-radius: 7px;
     background-color: #eee;
     padding: 1em;
 }

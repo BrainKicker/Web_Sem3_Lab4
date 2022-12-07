@@ -1,64 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
+	<meta charset="utf-8" />
+	<title>Question / Comment Form</title>
+	<link rel="stylesheet"
+		  href="style.css" />
 </head>
 
 <body>
 
-    <form id="question-comment-form">
+	<form id="question-comment-form">
 
-        <label>
-            <h2 style="margin-top: 0px;">Full name</h2>
-            
-            <div class="hbox">
-                <input id="first-name" class="hitem" type="text" placeholder="First name" style="margin-right: var(--small-margin);"/>
-                <input id="last-name" class="hitem" type="text" placeholder="Last name" />
-            </div>
-        </label>
+		<label>
+			<h2 style="margin-top: 0px;">Full name</h2>
 
-        <label>
-            <h2>Address</h2>
+			<div class="hbox">
+				<input id="first-name"
+					   type="text"
+					   placeholder="First name"
+					   style="margin-right: var(--small-margin);" />
+				<input id="last-name"
+					   type="text"
+					   placeholder="Last name" />
+			</div>
+		</label>
 
-            <div class="vbox">
-                <input id="street-address" class="vitem" type="text" placeholder="Street Address" style="margin-bottom: var(--small-margin);" />
-                <div class="hbox">
-                    <input id="city" class="hitem" type="text" placeholder="City" />
-                    <input id="state" class="hitem" type="text" placeholder="State" style="margin: 0 var(--small-margin);" />
-                    <input id="zip-code" class="hitem" type="text" placeholder="ZIP Code" />
-                </div>
-            </div>
-        </label>
+		<label>
+			<h2>Address</h2>
 
-        <label>
-            <h2>Contact Information</h2>
+			<div class="vbox">
+				<input id="street-address"
+					   type="text"
+					   placeholder="Street Address"
+					   style="margin-bottom: var(--small-margin);" />
+				<div class="hbox">
+					<input id="city"
+						   type="text"
+						   placeholder="City" />
+					<input id="state"
+						   type="text"
+						   placeholder="State"
+						   style="margin: 0 var(--small-margin);" />
+					<input id="zip-code"
+						   type="text"
+						   placeholder="ZIP Code" />
+				</div>
+			</div>
+		</label>
 
-            <div class="hbox">
-                <input id="email" class="hitem" type="email" placeholder="Email*" style="margin-right: var(--small-margin);" required />
-                <input id="phone" class="hitem" type="tel" placeholder="Phone" />
-            </div>
-        </label>
+		<label>
+			<h2>Contact Information</h2>
 
-        <label>
-            <h2>Questions / Comments</h2>
-            <div class="hbox">
-                <textarea id="message" class="hitem" placeholder="Message*" style="resize: vertical;" required></textarea>
-            </div>
-        </label>
+			<div class="hbox">
+				<input id="email"
+					   type="email"
+					   placeholder="Email*"
+					   style="margin-right: var(--small-margin);"
+					   required />
+				<input id="phone"
+					   type="tel"
+					   placeholder="Phone" />
+			</div>
+		</label>
 
-        <label style="font-size: 14px;">
-            <input id="update-me-via-email" type="checkbox" />
-            Update me on deals and special offers via email
-        </label>
+		<label>
+			<h2>Questions / Comments</h2>
+			<div class="hbox">
+				<textarea id="message"
+						  placeholder="Message*"
+						  style="resize: vertical;"
+						  required></textarea>
+			</div>
+		</label>
 
-        <br/>
+		<label style="font-size: 14px;">
+			<input id="update-me-via-email"
+				   type="checkbox" />
+			Update me on deals and special offers via email
+		</label>
 
-        <input id="submit-button" type="submit" value="Submit" />
+		<br/>
 
-    </form>
-
+		<input id="submit-button"
+			   type="submit"
+			   value="Submit" />
+	</form>
 </body>
 
 </html>
